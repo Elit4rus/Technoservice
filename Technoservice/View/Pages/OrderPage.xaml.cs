@@ -24,5 +24,10 @@ namespace Technoservice.View.Pages
         {
             InitializeComponent();
         }
+
+        private void AddOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

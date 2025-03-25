@@ -8,6 +8,31 @@
       d:DesignHeight="560" d:DesignWidth="1240"
       Title="Страница заказа">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="1*"/>
+             <ColumnDefinition Width="10"/>
+             <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Поиск по номеру"/>
+            <TextBox x:Name="SearchByNumberTb" Width="300"/>
+        </StackPanel>
+
+        <Button Grid.Column="2" x:Name="AddOrderBtn" Content="Добавить заявку" Click="AddOrderBtn_Click" HorizontalAlignment="Right"/>
+
+        <ListView x:Name="OrdersLv" Grid.Row="2">
+            
+        </ListView>
+
+        <Grid x:Name="OrderDetailsGrid" Grid.Row="2" Grid.Column="2">
+            
+        </Grid>
     </Grid>
 </Page>
