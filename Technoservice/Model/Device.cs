@@ -18,8 +18,10 @@ namespace Technoservice.Model
         public string Name { get; set; }
         public int DeviceTypeId { get; set; }
         public int OrderId { get; set; }
+        public int MalfunctionTypeId { get; set; }
     
         public virtual DeviceType DeviceType { get; set; }
+        public virtual MalfunctionType MalfunctionType { get; set; }
         public virtual Order Order { get; set; }
     }
 }

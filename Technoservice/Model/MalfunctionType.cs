@@ -16,12 +16,12 @@ namespace Technoservice.Model
     {
         public MalfunctionType()
         {
-            this.Order = new HashSet<Order>();
+            this.Device = new HashSet<Device>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
     
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Device> Device { get; set; }
     }
 }

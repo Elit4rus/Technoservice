@@ -23,7 +23,6 @@ namespace Technoservice.Model
         public string Number { get; set; }
         public System.DateTime CreationDate { get; set; }
         public System.DateTime EndDate { get; set; }
-        public int MalfunctionTypeId { get; set; }
         public string Description { get; set; }
         public int ClientId { get; set; }
         public int OrderStatusId { get; set; }
@@ -34,7 +33,6 @@ namespace Technoservice.Model
         public virtual ICollection<Device> Device { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual Feedback Feedback { get; set; }
-        public virtual MalfunctionType MalfunctionType { get; set; }
         public virtual OrderStatus OrderStatus { get; set; }
     }
 }
